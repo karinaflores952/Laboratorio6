@@ -1,0 +1,56 @@
+body{
+    background-color: aquamarine;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px
+}
+
+
+.menu{
+    width: 900px;
+    margin: 0 auto;
+}
+
+header{
+    background: white;
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
+}
+
+nav{
+    float: right;
+}
+
+
+nav ul li{
+    list-style: none;
+    margin-left: 75px;
+    padding: 25px 0;
+    float: left;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgba(255, 0, 55, 0.705);
+    font-weight: bold;
+}
+
+nav ul li a::before{
+    display: block;
+    width: 0%;
+    background: rgb(187, 0, 62) ;
+    content: '';
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: width 1s;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+}
